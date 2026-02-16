@@ -219,6 +219,17 @@
       pointer-events: none;
     }
 
+    .screen-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 75px;
+      height: 60px;
+      background: #000;
+      z-index: 5;
+      pointer-events: auto;
+    }
+
     .screen iframe {
       display: block;
       width: 100%;
@@ -296,6 +307,7 @@
     <main class="monitor-wrap">
     <div class="screen-bezel">
       <div class="screen">
+        <div class="screen-overlay" aria-hidden="true"></div>
         <iframe
           src="https://freekong.org/"
           allowfullscreen
