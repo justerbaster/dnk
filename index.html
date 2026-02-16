@@ -226,8 +226,9 @@
       width: 75px;
       height: 60px;
       background: #000;
-      z-index: 5;
+      z-index: 10;
       pointer-events: auto;
+      cursor: default;
     }
 
     .screen iframe {
@@ -307,12 +308,12 @@
     <main class="monitor-wrap">
     <div class="screen-bezel">
       <div class="screen">
-        <div class="screen-overlay" aria-hidden="true"></div>
         <iframe
           src="https://freekong.org/"
           allowfullscreen
           title="Donkey Kong"
         ></iframe>
+        <div class="screen-overlay" aria-hidden="true"></div>
       </div>
     </div>
     </main>
